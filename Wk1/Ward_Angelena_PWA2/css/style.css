@@ -1,0 +1,174 @@
+/* CSS Document b6 */
+
+/* #Basic Styles
+================================================== */
+body{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.000em;
+    line-height: 22px;
+    letter-spacing: 1px;
+	background-image: url(../images/foxtail.png);
+	background-repeat: repeat;
+	background-position: top center;
+	color: white;
+}
+
+#page{
+	width:90%;
+	margin:0 auto;
+	background: #8dc541;
+	padding:2%;
+	border-radius:15px;
+	box-shadow: 2px 2px 5px #2c2c2c;
+}
+
+/* #Typography
+================================================== */
+p{
+   font-weight: lighter;
+   padding: 1% 1% 1% 1%;
+}
+
+/* #Links
+================================================== */
+a:link{
+	/*color of links*/
+    color: #0177bd;
+    text-decoration: none;
+}
+
+a:visited{
+	/*color the links turn after being visited*/
+    color: #88479b;
+}
+
+a:hover{
+	/*color link changes when it's hovered over*/
+    color: white;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #F28159;
+}
+
+/* #Navigation
+================================================== */
+nav{
+	text-align: center;	
+	box-shadow: 1px 2px 2px #;
+}
+
+nav li{
+	display: inline-block;
+	margin: 0px 25px;
+	border-witch: 0 1px;
+}
+
+/* #images
+================================================== */
+.logo img{
+	width: 40%;
+	float: right;
+}
+
+.col figure{
+	padding-left: 10%;
+}
+.col figure, col-1 figure
+{
+	width: 30%;
+	float: left;
+	margin: 1%;
+}
+.col-2 {
+    display: inline;
+    float: left;
+    margin-right: 1.69492%;
+    width: 100%;
+}
+
+/* #Table
+================================================== */
+table{
+	border-spacing: 0px;
+	width: auto;
+	margin-top: 30px;
+}
+
+.tab, tr{
+	background-color: #51a0a8;	
+	font-size: 90%;
+	margin: 0px;
+}
+
+.tab{
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px black;
+	padding: 2px;
+}
+
+tr, td{
+	padding: 5px 30px 5px 10px;
+	border-top: 1px solid #f1f8fe;
+	border-bottom: 1px solid #cbd2d8;
+	border-right: 1px solid #cbd2d8;
+	text-align: right;
+	
+}
+
+.odd{
+    background-color: #337f8c;
+}
+
+tr:hover{
+    background-color: #f26c21;
+}
+
+/* #Form
+================================================== */
+fieldset{
+	border-top: .1em solid #ddd;
+	border-bottom: none;
+	border-right: none;
+	border-left:none;
+	margin: 1em;
+}
+form, legend { 
+	color: white;
+}
+form {
+	width: 70%;
+	position: relative;
+	margin: 2em auto;
+	border: .1em solid #9d9da0;
+	background: #bf2372;
+	border-radius: 0.625em;
+	box-shadow: 0.3125em 0.3125em 0.6875em rgba(0,0,0,0.42);
+	padding: 1em 0 em 1em;
+}
+
+input[type=text], input[type=submit], input[type=date], input[type=num], textarea, button {
+	
+	border: .1em solid #ddd;
+	background: white;
+	border-radius: 0.3125em;
+	padding: 0.125em;
+	margin: 0;
+	margin-bottom: 0.625em;
+	color: #555;
+	height: 2em;
+}
+label, input, select {
+    display:inline-block; 
+}
+label {
+	width:30%;
+    text-align:right;
+	margin-right: 1em;
+}
+
+.col-4 {
+	margin-left: 25%;
+    width: 40%;
+}

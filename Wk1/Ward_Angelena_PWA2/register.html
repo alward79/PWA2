@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Creation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="page">
+        <!-- header
+        ================================================== -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." clas"img-responsive"></a>
+                </div>
+                <div class="block-menu">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html" title="Home" target="_self">Home</a>
+                            </li>
+                            <li>
+                                <a href="register.html" title="Register" target="_self">Register</a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html" title="Dashboard" target="_self">Dashboard</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+        <div class="banner-background">
+            <section class="container banner-container">
+                <div class="banner">
+                    <h3 class="banner-title">Who are we!</h3>
+                    <p class="banner-content">Design Creation is a project management application that allows clients to execute projects effectively and efficiently. It’s very straightforward and easy to use, with an excellent user interface. </p>
+                     <a class="btn btn-ok" href="register.html">Sign up now</a>
+                </div>
+        	</section>
+        </div>
+       
+      	<!-- Form
+		================================================== -->
+        <div class="form">
+		<form action="#" id="form" autocomplete="off">
+		<fieldset>
+			<legend>Personal Info</legend>
+			<div class="row">
+				<label for="name">Name</label>
+				<input class="halfWidth" type="text" id="name" name="name" placeholder="First Name" required autofocus>				
+				<input class="halfWidth" type="text" id="last_name" name="name" placeholder="Last Name" required>
+			</div>
+	
+			<div class="row">
+				<label for="address">Home Address</label>
+				<input type="text" id="address" name="address_street" placeholder="Street Address" required>
+				<input type="text" name="address_street_2" placeholder="Address Line 2">
+				<input type="text" placeholder="City" name="address_city" required>
+			
+				<label for="state">State</label>
+				<select class="half-size" name="address_state" id="state" required>
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="DC">DC</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>							
+				</select>
+			</div>
+			<div class="gender">
+				<!--Gender -->
+				<label for="range">Gender</label>
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="male"> Male
+			</div>
+			<div class="row">
+				<!-- Birthday -->
+				<label for="birthday">Birthday</label> 
+				<input type="date" id="datepicker"><br>
+				<!-- Telephone Number -->
+				<label for="phonenumber">Phone Number</label>
+				<input type="num" id="phonenumber" placeholder="ex: 555-555-5555" required><br>
+			
+				<!-- E-mail Address -->
+				<label for="email">E-mail Address</label>
+				<input type="text" id="email" name="email" required="" placeholder="name@email.com">
+			</div>
+			<div class="checkbox">
+				<!-- Agree to terms -->
+				<input type="checkbox" name="option" value="terms" required> I agree to the terms and conditions<br>
+			</div>
+		</fieldset>	
+		<div id="submit">
+			<input type="submit" value="Submit">
+		</div>	 
+	</form>	
+	</div>            
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/application.min.js"></script>
+</body>
+</html>
