@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Creation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="page">
+   		<!-- header
+        ================================================== -->
+        <h3>Welcome User:</h3>
+        <header class="header">
+        	<div class="logout"> 
+                <a href="admin.html" title="Register" target="_self"><input name="dashBoard" type="button" id="dashBoard" value="Dash Board"/></a>
+                <input name="logOut" type="button" id="logOut" value="Log Out"/>
+            </div>    
+        	<div class="container">
+            	<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." class"img-responsive"></a>				                
+                </div>
+            </div>
+        </header>
+        <!-- banner
+ 		================================================== -->
+     	<div class="banner-background">
+        	<section class="container banner-container">
+                <div class="banner">
+                    <p class="banner-content">Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada in massa. Aenean in pede. Phasellus ac libero Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Nam enim risus, ac tellus pellentesque semper.</p>           	</div>
+            </section>
+        </div>
+        <!-- table
+        ================================================== -->
+        <div class="main">
+            <section class="container featured-container">
+                <div class="col-1 txt-center">
+                    <h3 class="call-title-big">Projects</h3>
+                    <table>
+                        <tr>
+                            <th class="tab">Project name</th>
+                            <th class="tab">Description</th>
+                        </tr>	
+                         
+                        <tr class="odd">
+                            <td>Project 1</td>
+                            <td>(Rated Start-class)</td>
+                        </tr>
+                        <tr>
+                            <td>Project 2</td>
+                            <td>(Rated Start-class)</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Project 3</td>
+                            <td>(Rated Start-class)</td>
+                        </tr>
+                        <tr>
+                            <td>Project 4</td>
+                            <td>(Rated Start-class)</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Project 5</td>
+                            <td>(Rated Start-class)</td>
+                        </tr>
+                        <tr>
+                            <td>Project 6</td>
+                            <td>(Rated Start-class</td>
+                        </tr>
+                    </table>    	
+                </div>
+            </section>
+       	</div> 
+        
+         <!-- footer
+        ================================================== -->
+        <footer id="footer"><small>
+            &copy; Design Creation</div></small>
+        </footer>   
+    
+    </div> <!-- end page -->
+    
+   	<!-- Add form
+   	================================================== -->
+  	<div class="addform">
+       <form id="addform">
+            <label for="projectName"> Project Name:</label>
+            <input type="text" id="projectname" name="project-name"/>
+            <br>
+            <label for="desctiption"> Project Description:</label>
+            <input type="text" id="description" name="project-description"/>
+            <br>
+            <label for>Project Due Date: </label>
+            <input type= "text" id="duedate" name="projectduedate"/>
+            <br>
+            <label for="status">Select status: </label>
+            <select class="mystatus" id="MyStatus" name="status">
+                <option value="urgent">urgent</option>
+                <option value="normal">normal</option>
+                <option value="delayed">delayed</option>
+                <option value="complete">complete</option>
+            </select> 
+            <div id="addbtn">                  
+                <input type="button" value="Add"/>
+            </div>	
+         </form>	
+   	</div>      		
+    <!-- JavaScript
+    ================================================== -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/application.min.js"></script>
+</body>
+</html>
