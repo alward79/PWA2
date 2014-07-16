@@ -8,6 +8,7 @@
 	The only html element in the body is the container div
 	Your code should load your page templates into the container
 -->
+
 <html lang="en">
 <head>
 
@@ -29,16 +30,11 @@
 
 <body>
 	<div id="page">
-        <!-- Header
-        ================================================== -->
         <header class="header">
             <div class="logo container">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." class"img-responsive"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." clas"img-responsive"></a>
                 </div>
-                
-                <!-- Navigation
- 				================================================== -->
                 <div class="block-menu">
                     <nav>
                         <ul class="menu">
@@ -56,53 +52,45 @@
                 </div>
             </div>
         </header>
-        
-        <!-- Banner
- 		================================================== -->
         <div class="banner-background">
-            <section class="container banner-container">
-                <div class="banner">
+        <section class="container banner-container">
+            <div class="banner">
+                <div class="slide">
                     <div class="banner-text">
-                        <h3 class="banner-title">Who are we!</h3>
-                        <p class="banner-content">Design Creation is a project management application that allows clients to execute projects effectively and 							
-                        efficiently. It’s very straightforward and easy to use, with an excellent user interface. </p>
+                        <h2 class="banner-title">Who are we!</h2>
+                        <p class="banner-content">Design Creation is a project management application that allows clients to 	                    execute projects effectively and efficiently. It’s very straightforward and easy to use, with an excellent user interface. </p>
                         <a class="btn btn-ok" href="register.html">Sign up now</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </div>
         <div class="main">
-         	
-            <!-- Images
- 			================================================== -->
             <section class="container">
                 <div class="col">
                     <figure><img src="images/friends.png" alt="friends" class="img-responsive">
-                    	<figcaption><h4 class="featured">Find friends</h4>
-                    	Invite friends to join.</figcaption>
-                  	</figure>
+                        <figcaption><h4 class="featured">Find friends</h4>
+                            Invite friends to join.</figcaption>
+                    </figure></a>
                 </div>
-               
-                <div class="col-1 txt-center">
+                <div class="col-1">
                     <figure><img src="images/collaboration.png" alt="collaborate" class="img-responsive">
                         <figcaption><h4 class="featured">Collaborate!</h4>
                         Work together to create a project.</figcaption>
-                    </figure>
+                    </figure></a>
                 </div>
-            </section>
-            
-           	<!-- login form
-          	================================================== -->
-            <section class="container">
-                <div class="col-4">
-                    <form action="#" method="post">
-                        <fieldset>
+          	</section>
+    
+            <section class="container2">
+                <div class="login">
+                    <form action="#" id="login_form" method="post">
+                        <fieldset>                   
                             <legend>Log into your account</legend>
-                            <p><label class="title" for="name">Username</label>
-                            <input class="halfWidth" type="text" id="name" name="name" placeholder="Username" required autofocus>				
+                            <label class="title" for="name">Username</label>
+                            <input class="tooltip" data-tip-type="text" data-tip-source="Username Required" type="text" required autofocus>
+                            <br>				
 	                       	<label class="title" for="name">Password</label>
-							<input class="halfWidth" type="text" id="name" name="name" placeholder="Password" required autofocus>				
-                            </p>
+							<input class="tooltip" data-tip-type="text" data-tip-source="Password Required" type="text" required autofocus>				
                         </feildset>
                         <div id="submit">
                             <input type="submit" value="Submit">
@@ -112,21 +100,14 @@
                 </div>
             </section>
         </div>
-       
-        <!-- footer
- 		================================================== -->
-        <footer id="footer"><small>
-			&copy; Design Creation</div></small>
-		</footer>
             
         <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- plugins -->
-    
         
         <!-- main -->
         <script type="text/javascript" src="js/main.js"></script>
-	</div> <!-- END PAGE -->
+	</div>
   
 </body>
 </html>
