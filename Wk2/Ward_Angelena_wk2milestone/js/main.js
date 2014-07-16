@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	Your Project Design Creation
+	Author: Angelena Ward
 */
 
 (function($){
@@ -48,12 +48,6 @@
 	==================================== END EVENTS 
 	===============================================
 	*/
-		
-		
 
-	
 })(jQuery); // end private scope
-
-
-
 
