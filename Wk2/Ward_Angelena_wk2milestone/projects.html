@@ -66,8 +66,9 @@
                             <td>Project 6</td>
                             <td>(Rated Start-class</td>
                         </tr>
-                    </table>    	
-                </div>
+                    </table>  
+                    <div id="load"><a href="#" title="Home" target="_self">Add new project</a></div>
+                </div>                        
             </section>
        	</div> 
         
@@ -81,7 +82,8 @@
     
    	<!-- Add form
    	================================================== -->
-  	<div class="addform">
+  	<div id="popup">
+    <div id ="contain">
        <form id="addform">
             <label for="projectName"> Project Name:</label>
             <input type="text" id="projectname" name="project-name"/>
@@ -92,21 +94,21 @@
             <label for>Project Due Date: </label>
             <input type= "text" id="duedate" name="projectduedate"/>
             <br>
-            <label for="status">Select status: </label>
-            <select class="mystatus" id="MyStatus" name="status">
-                <option value="urgent">urgent</option>
-                <option value="normal">normal</option>
-                <option value="delayed">delayed</option>
-                <option value="complete">complete</option>
+            <label for="mystatus">Select status: </label>
+        	<input type="radio" name="status" value="urgent"> Urgent
+           	<input type="radio" name="status" value="normal"> Normal
+          	<input type="radio" name="status" value="delayed"> Delayed
+          	<input type="radio" name="status" value="completed"> Completed
             </select> 
             <div id="addbtn">                  
-                <input type="button" value="Add"/>
+                <input type="addbtn" value="Add"/>
             </div>	
          </form>	
-   	</div>      		
+   	</div>
+    </div>      		
     <!-- JavaScript
     ================================================== -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/application.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>    
+  	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
