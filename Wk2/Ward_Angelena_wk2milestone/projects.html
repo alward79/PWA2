@@ -86,22 +86,22 @@
     <div id ="contain">
        <form id="addform">
             <label for="projectName"> Project Name:</label>
-            <input type="text" id="projectname" name="project-name"/>
+            <input class="masterTooltip" title="enter project name" type="text" id="projectname" name="project-name"/>
             <br>
             <label for="desctiption"> Project Description:</label>
-            <input type="text" id="description" name="project-description"/>
+            <input class="masterTooltip" title="enter project description" type="text" id="description" name="project-description"/>
             <br>
             <label for>Project Due Date: </label>
-            <input type= "text" id="duedate" name="projectduedate"/>
+            <input class="masterTooltip" title="enter project due date" type= "text" id="duedate" name="projectduedate"/>
             <br>
-            <label for="mystatus">Select status: </label>
+            <label class="masterTooltip" title="status" for="mystatus">Select status: </label>
         	<input type="radio" name="status" value="urgent"> Urgent
            	<input type="radio" name="status" value="normal"> Normal
           	<input type="radio" name="status" value="delayed"> Delayed
           	<input type="radio" name="status" value="completed"> Completed
             </select> 
             <div id="addbtn">                  
-                <input type="addbtn" value="Add"/>
+                <input  class="masterTooltip" title="Add new project" type="addbtn" value="Add"/>
             </div>	
          </form>	
    	</div>

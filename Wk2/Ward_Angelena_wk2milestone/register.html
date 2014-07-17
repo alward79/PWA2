@@ -56,18 +56,18 @@
 			<legend>Personal Info</legend>
 			<div class="row">
 				<label for="name">Name</label>
-				<input class="halfWidth" type="text" id="name" name="name" placeholder="First Name" required autofocus>				
-				<input class="halfWidth" type="text" id="last_name" name="name" placeholder="Last Name" required>
+				<input class="masterTooltip" title="First Name Required" type="text" id="name" name="name" required autofocus>				
+				<input class="masterTooltip" title="Last Name Required" type="text" id="last_name" name="name"required autofocus>
 			</div>
 	
 			<div class="row">
 				<label for="address">Home Address</label>
-				<input type="text" id="address" name="address_street" placeholder="Street Address" required>
+				<input class="masterTooltip" title="Address Required" type="text" id="address" name="address_street" placeholder="Street Address" required>
 				<input type="text" name="address_street_2" placeholder="Address Line 2">
-				<input type="text" placeholder="City" name="address_city" required>
+				<input class="masterTooltip" title="Enter your city" type="text" name="address_city" required>
 			
 				<label for="state">State</label>
-				<select class="half-size" name="address_state" id="state" required>
+				<select class="masterTooltip" title="Select your city" name="address_state" id="state" required>
 					<option value="AL">AL</option>
 					<option value="AK">AK</option>
 					<option value="AZ">AZ</option>
@@ -130,14 +130,14 @@
 			<div class="row">
 				<!-- Birthday -->
 				<label for="birthday">Birthday</label> 
-				<input type="date" id="datepicker"><br>
+				<input class="masterTooltip" title="Birthday Required" type="date" id="datepicker"><br>
 				<!-- Telephone Number -->
 				<label for="phonenumber">Phone Number</label>
-				<input type="num" id="phonenumber" placeholder="ex: 555-555-5555" required><br>
+				<input class="masterTooltip" title="Phone number Required" type="num" id="phonenumber" placeholder="ex: 555-555-5555" required><br>
 			
 				<!-- E-mail Address -->
 				<label for="email">E-mail Address</label>
-				<input type="text" id="email" name="email" required placeholder="name@email.com">
+				<input class="masterTooltip" title="Email Required" type="text" id="email" name="email" required placeholder="name@email.com">
 			</div>
 			<div class="checkbox">
 				<!-- Agree to terms -->
@@ -145,7 +145,7 @@
 			</div>
 		</fieldset>	
 		<div id="register">
-			<input type="register" value="Register">
+			<input class="masterTooltip" title="Register" type="register" value="Register">
 		</div>	 
 	</form>	
 	</div> 

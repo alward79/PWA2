@@ -59,7 +59,7 @@
                     <div class="banner-text">
                         <h2 class="banner-title">Who are we!</h2>
                         <p class="banner-content">Design Creation is a project management application that allows clients to 	                    execute projects effectively and efficiently. It’s very straightforward and easy to use, with an excellent user interface. </p>
-                        <a class="btn btn-ok" href="register.html">Sign up now</a>
+                        <a class="btn btn-ok masterTooltip" title="Sign-up" href="register.html">Sign up now</a>
                     </div>
                 </div>
             </div>
@@ -87,27 +87,27 @@
                         <fieldset>                   
                             <legend>Log into your account</legend>
                             <label class="title" for="name">Username</label>
-                            <input class="tooltip" data-tip-type="text" data-tip-source="Username Required" type="text" required autofocus>
+                            <input class="masterTooltip" title="Username Required" type="text" id="username" name="username" required autofocus>		
                             <br>				
 	                       	<label class="title" for="name">Password</label>
-							<input class="tooltip" data-tip-type="text" data-tip-source="Password Required" type="text" required autofocus>				
+							<input class="masterTooltip" title="Password Required" type="text" id="password" name="password" required autofocus>					
                         </feildset>
                         <div id="submit">
-                            <input type="submit" value="Submit">
-                           	<input type="submit" value="Register">
+                            <input class="masterTooltip" title="Log-in"  type="submit" value="Submit">
+                           	<input class="masterTooltip" title="Sign-up" type="submit" value="Register">
                         </div>
                 	</form>
                 </div>
             </section>
         </div>
-            
+	</div>
         <!-- jquery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- plugins -->
         
         <!-- main -->
         <script type="text/javascript" src="js/main.js"></script>
-	</div>
+
   
 </body>
 </html>
