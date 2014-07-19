@@ -1,0 +1,84 @@
+<!--instruction to the web browser about what version of HTML the page is written in-->
+<!doctype html>
+
+<!--primary language for the web page-->
+<html lang="en">
+
+<!--opening tag where most of the instructions for the browser are located-->
+<head>
+
+	<!--ensures the browser knows character encoding before it does anything else-->
+	<meta charset="utf-8">
+
+	<!--defines the title of the document-->
+	<title>jQuery.getJSON demo</title>
+
+	<!--defines style information for the image-->
+	<style>
+	
+	/*height and location of images*/
+	img {
+	  height: 100px;
+	  float: left;
+	}
+		
+	/*closing style tag*/
+  	</style>
+ 	
+ 	<!--script tag for jquery version-->
+ 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<!--closing tag with brower instructions--> 	
+</head>
+
+<!--opening tag that defines the document's body-->
+<body>
+
+	<!--defines blocks of images in a cotainer that can be formatted with CSS-->
+	<div id="images"></div>
+	
+	<!--opening script tag used to embed or reference executable script-->
+	<script>
+	
+	//used to perform a particular task and is executed when something invokes it (calls it)
+	(function() {
+	
+		//a variable named flickerAPI that stores information from flickr
+ 		var flickerAPI = "http://api.flickr.com/services/feeds/photos_public...
+ 		
+ 		//requests and takes in the data feed from the speicified URL above
+  		$.getJSON( flickerAPI, {
+    		tags: "mount rainier",
+    		tagmode: "any",
+    		format: "json"
+  		})//closes .getJSON
+  		
+  		//when data is ready this function is invoked it grabs the images matching
+  		//the specified JSON and adds it to the image container
+  		.done(function( data ) {
+		
+			//loops over the items
+      		$.each( data.items, function( i, item ) {
+      			
+      			/*creates an image tag and attaches each each items media.m as the source
+      			attribute to the image tag and appends the string to the images div*/
+        		$( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        		
+        		//no more than 4 items is processed
+        		if ( i === 3 ) {
+        		
+        			//prevents default action
+          			return false;
+        		} //end if statement
+      		});//closes the loop function
+		});//closes the .done function
+		})();//closes the the entire funciton
+	
+		//close script tag	
+		</script>
+	
+	<!--close the body tag-->	
+	</body>
+
+<!--closing the character encoding tag-->
+</html>
