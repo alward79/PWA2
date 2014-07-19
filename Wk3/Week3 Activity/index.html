@@ -1,0 +1,71 @@
+<!--instruction to the web browser about what version of HTML the page is written in-->
+<!doctype html>
+
+<!--primary language for the web page-->
+<html lang="en">
+
+<!-- where most of the instructions for the browser are located-->
+<head>
+	<meta charset="utf-8">
+
+	<!--defines the title of the document-->
+	<title>jQuery.getJSON demo</title>
+
+	<!--defines style information for the image-->
+	<style>
+	
+	img {
+	  height: 100px;
+	  float: left;
+	}
+  
+	<!--end of sytle-->
+  	</style>
+ 	
+ 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<!--end the head tag with brower instructions--> 	
+</head>
+
+<!--defines the document's body-->
+<body>
+
+	<!--defines blocks of images in a section that can be formatted with CSS-->
+	<div id="images"></div>
+	
+	<!--used to embed or reference an executable script-->
+	<script>
+	
+	//used to embed or reference an executable script to perform a particular task
+	(function() {
+	
+		//a variable named flickerAPI that stores information from flickr
+ 		var flickerAPI = "http://api.flickr.com/services/feeds/photos_public...
+ 		
+ 		//requests and takes in the data feed from the speicified URL above
+  		$.getJSON( flickerAPI, {
+    		tags: "mount rainier",
+    		tagmode: "any",
+    		format: "json"
+  		})
+		.done(function( data ) {
+      		$.each( data.items, function( i, item ) {
+      			
+      			/*creates an image tag and attaches each each items media.m as the source
+      			attribute to the image tag and appends the string to the images div*/
+        		$( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        		
+        		//no more than 4 items is processed
+        		if ( i === 3 ) {
+        		
+        			//prevents default action
+          			return false;
+        		}
+      		});
+		});
+	})();
+	//close script tag	
+	</script>
+	
+<!--close the body tag-->	
+</body>
+</html>
