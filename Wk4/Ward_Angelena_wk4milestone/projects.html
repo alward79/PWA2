@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Creation</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  	
+</head>
+<body>
+	<div id="page">
+   		<!-- header
+        ================================================== -->
+        <div class="userID">
+        	<h3>Welcome User:</h3>
+       	</div> 
+            
+        <header class="header">
+        	<div class="logout"> 
+                <a href="admin.html" title="Register" target="_self"><input name="dashBoard" type="button" id="dashBoard" value="Dash Board"/></a>
+                <input name="logOut" type="button" id="logOut" value="Sign Out"/>
+            </div>    
+        	<div class="container">
+            	<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." class"img-responsive"></a>				                
+                </div>
+            </div>
+        </header>
+        <!-- banner
+ 		================================================== -->
+     	<div class="banner-background">
+        	<section class="container banner-container">
+                <div class="banner">
+                    <p class="banner-content">Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada in massa. Aenean in pede. Phasellus ac libero Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Nam enim risus, ac tellus pellentesque semper.</p>           	</div>
+            </section>
+        </div>
+        <!-- Add new Project
+        ================================================== -->
+       	<div id="load">
+        	<a class="modalClick" name="addbtn" type="button" id="addbtn" value="Add Project">ADD+</a>
+        </div>   
+   		<div id="pojectslist">
+           	<h1>Current Projects</h1>
+           	<div class="projects" id="sortable"> 
+            </div>   
+       	</div>       
+              
+         <!-- footer
+        ================================================== -->
+        <footer id="footer"><small>
+            &copy; Design Creation</div></small>
+        </footer>   
+    
+    </div> <!-- end page -->
+    
+   	<!-- Add form
+   	================================================== -->
+    <div id="overlay">
+        <div id="modal">
+            <span class="close">X</span>
+            <div id ="popup">
+               <form id="addForm"><h4>Add new project</h4>
+               		<label for="projectDueDate">Project Name: </label>
+                    <input class="masterTooltip" title="enter project name" type="text" id="projectName" name="projectName" placeholder="i.e. Project 1"/>
+                    <br>
+                    <label for="projectDueDate">Project Description: </label>
+                    <input class="masterTooltip" title="enter project description" type="text" id="projectDescription" name="projectDescription" placeholder="Enter descripton here"/>
+                    <br>
+                    <label for="projectDueDate">Project Due Date: </label>
+                    <input class="masterTooltip datepicker" title="enter project due date" type= "text" id="dueDate" name="dueDate" placeholder="12/01/2014"/>
+                    
+                    <br>
+                    <label class="masterTooltip" title="status" for="status">Select status: </label>
+                    <input type="radio" name="status" id="urgent"> Urgent
+                    <input type="radio" name="status" id="normal"> Normal
+                    <input type="radio" name="status" id="delayed"> Delayed
+                    <input type="radio" name="status" id="completed"> Completed
+                    <div id="addButton">                  
+                        <input class="masterTooltip" title="Add new project" type="button" id="addButton" name="addButton" value="Add"/>
+                    </div>	
+                    
+                 </form>	
+            </div>
+       	</div>
+  	</div>          		
+    <!-- JavaScript
+    ================================================== -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+</body>
+</html>

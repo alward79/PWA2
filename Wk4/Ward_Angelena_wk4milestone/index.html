@@ -1,0 +1,112 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Design Creation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+	<div id="page">
+        <header class="header">
+            <div class="logo container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Design Creation. click for home." clas"img-responsive"></a>
+                </div>
+                <div class="block-menu">
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html" title="Home" target="_self">Home</a>
+                            </li>
+                            <li>
+                                <a href="register.html" title="Register" target="_self">Register</a>
+                            </li>
+                            <li>
+                                <a href="admin.html" title="Dashboard" target="_self">Dashboard</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="banner-background">
+        <section class="container banner-container">
+            <div class="banner">
+                <div class="slide">
+                    <div class="banner-text">
+                        <h2 class="banner-title">Who are we!</h2>
+                        <p class="banner-content">Design Creation is a project management application that allows clients to 	                    execute projects effectively and efficiently. It’s very straightforward and easy to use, with an excellent user interface. </p>
+                        <a class="btn btn-ok masterTooltip" title="Sign-up" href="register.html">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div class="main">
+            <section class="container">
+                <div class="col">
+                    <figure><img src="images/friends.png" alt="friends" class="img-responsive">
+                        <figcaption><h4 class="featured">Find friends</h4>
+                            Invite friends to join.</figcaption>
+                    </figure></a>
+                </div>
+                <div class="col-1">
+                    <figure><img src="images/collaboration.png" alt="collaborate" class="img-responsive">
+                        <figcaption><h4 class="featured">Collaborate!</h4>
+                        Work together to create a project.</figcaption>
+                    </figure></a>
+                </div>
+          	</section>
+    
+            <section class="container2">
+                <div class="login">
+                    <form id="login_form">
+                        <fieldset>                   
+                            <legend>Log into your account</legend>
+                            <label class="title" for="userName">Username</label>
+                            <input class="masterTooltip" title="Username Required" type="text" id="user" name="signinButton" required autofocus>		
+                            <br>				
+	                       	<label class="title" for="password">Password</label>
+							<input class="masterTooltip" title="Password Required" type="password" id="pass" name="signinButton" required autofocus>					
+                        </feildset>
+                        <div id="submit">
+                            <input class="masterTooltip" title="Log-in"  type="button" id="signinButton" value="Sign In">
+                        </div>
+                	</form>
+                </div>
+            </section>
+        </div>
+	</div>
+        <!-- jquery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- plugins -->
+        
+        <!-- main -->
+        <script type="text/javascript" src="js/main.js"></script>
+
+  
+</body>
+</html>
