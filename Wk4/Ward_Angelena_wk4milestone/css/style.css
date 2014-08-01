@@ -175,18 +175,13 @@ table{
 	border-spacing: 0px;
 }
 
+
 .tab, tr{
 	background-color: #51a0a8;	
 	margin: 0px;
 }
 
-.tab{
-	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px black;
-	padding: 2px;
-}
-
-tr, td{
+tr, td {
 	padding: 5px;
 	border-top: 1px solid #f1f8fe;
 	border-bottom: 1px solid #cbd2d8;
